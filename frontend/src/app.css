@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body{
+  background-color:white !important;
+}
+
+a {
+  text-decoration: none;
+}
+.bg img{
+  z-index: -1;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+}
+#sidebar {
+  background: #055af8c0 !important;
+  height: 100vh;
+  width: 200px;
+  transition: 0.4s all linear;
+  position: fixed;
+  cursor: pointer;
+  box-shadow: 13px -1px 18px -7px rgba(0,0,0,0.75);
+}
+
+.logo {
+  text-align: center;
+  border-bottom: 1px solid #bbaaaab0;
+  padding: 1.5rem 2rem;
+  text-align: start;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 2px 12px rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.logo a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav a {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.466);
+  transition: 0.4s all ease;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a:hover {
+  background: rgba(0, 0, 0, 0.692);
+  border-left: 5px solid #a3b929;
+}
+.nav a {
+  color: #ffffff;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+}
+
+.toggle-btn span {
+  display: block;
+  background: #ffffff;
+  height: 4px;
+  width: 30px;
+  margin: 0.3rem 0;
+  border-radius: 8px;
+}
+
+#sidebar.active {
+  margin-left: -200px;
+}
+
+.App {
+  padding: 1rem 0.8rem;
+  margin-top: 5rem;
+}
+.content {
+  margin-left: 200px;
+  transition: 0.4s all linear;
+}
+.content.active {
+  margin-left: 0;
+}
+
+.brand {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background: #34495e;
+  width: 100%;
+  padding: 5px;
+  z-index: 100;
+}
+.custom_search{
+  border-radius: 2rem;
+  position: sticky;
+  top: 0;
+  box-shadow: none;
+  outline: none;
+  box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.418);
+}
+.custom_bg{
+  box-shadow: 10px 10px 53px -9px rgba(0,0,0,0.75);
+  height: 80vh;
+  overflow: auto;
+}
+.custom_bg::-webkit-scrollbar {
+  width: 7px; /* width of the scrollbar */
+}
+
+.custom_bg::-webkit-scrollbar-thumb {
+  background-color: #ffc400; /* color of the thumb */
+  border-radius: 6px; /* roundness of the thumb */
+}
+
+.custom_bg::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color of the track */
+}
+
+.custom_bg::-webkit-scrollbar-thumb:hover {
+  background-color: #ffc400; /* color of the thumb on hover */
+}
+.f_size{
+  font-size: 1.5rem;
+}
+.icon_set{
+  color: rgba(255, 0, 0, 0.76);
+  font-size: 1.8rem;
+
+}
+.todo_input{
+  border: 2px solid green;
+}
+.border_set{
+  border: none;
+  outline: none;
+  background-color: #eee;
+  padding:1rem 4rem;
+  border-bottom: 1px solid rgba(36, 36, 36, 0.315);
+  display: flex;
+}
+.btn{
+  padding: 0rem 2rem;
+  color: white;
+  border-radius: 5rem;
+  margin-left: .3rem;
+}
+.custom_bgs{
+  box-shadow: 10px 10px 42px -10px rgba(0,0,0,0.75);
+  height: 370px;
+  position: relative;
+  top: 0.6rem;
+  width: 100vh;
+  border-top-right-radius: .9rem;
+  border-bottom-right-radius: 0.9rem;
+}
+
